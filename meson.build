@@ -3,11 +3,11 @@ project('pspdecrypt', ['c', 'cpp'],
   default_options : ['warning_level=3', 'cpp_std=c++11']
 )
 
-# Find dependencies
+# find dependencies
 openssl_dep = dependency('openssl', version : '>=1.1.0', modules : ['crypto'])
 zlib_dep = dependency('zlib')
 
-# Compiler flags
+# compiler flags
 add_project_arguments('-O3', language : ['c', 'cpp'])
 
 # source files
